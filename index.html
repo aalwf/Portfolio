@@ -30,11 +30,10 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-=======
   <audio id="audio" src="assets/audio.mp3" class="d-none" hidden preload="auto"></audio>
   <div id="secret" class="container mx-auto d-none">
     <div class="flex flex-column justify-content-center align-items-center mt-3">
@@ -424,7 +423,31 @@
           </div>
         </div>
     </section>
-    
+
+    <!-- Modal -->
+    <div class="modal fade" id="secretPassword" tabindex="-1" aria-labelledby="secretPasswordLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="secretPasswordLabel">Secret Message</h1>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="passsword" class="form-label">Password</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="secretPasswordInput" placeholder="Enter Password" autofocus>
+              </div>
+              <div class="form-text d-none is-invalid text-danger" id="secretPasswordError">Wrong Password</div>
+            </div>            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="closeSecretPassword" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="btnSecretPassword">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Background Animation -->
     <div class="bg-anim">
       <div class="wave"></div>
@@ -488,7 +511,7 @@
   <script src="assets/vendor/jquery/jquery-3.6.1.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

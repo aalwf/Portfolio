@@ -140,19 +140,6 @@
     });
   });
 
-  $("#btnSecretPassword").click(function () {
-    const password = $("#secretPasswordInput").val();
-    const currentPassword = "I033124/10010<3!"; // I033124/10010<3!
-    if (password === currentPassword) {
-      $("#secretCard").addClass("d-block");
-      $("#secretPassword").addClass("d-none");
-      $("#closeSecretPassword").click();
-    } else if (password != currentPassword) {
-      $("#secretPasswordError").removeClass("d-none");
-      password.val("");
-    }
-  });
-
   /**
    * Animation on scroll
    */
@@ -181,7 +168,7 @@
 
   $("#btnSecretPassword").click(function () {
     const password = $("#secretPasswordInput").val();
-    const currentPassword = "123"; // I033124/10010<3!
+    const currentPassword = "I033124/10010<3!"; // I033124/10010<3!
     if (password === currentPassword) {
       $("#closeSecretPassword").click();
       $("#header").addClass("d-none");
